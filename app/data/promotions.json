@@ -1,0 +1,14 @@
+   [
+     {
+       "id": "1",
+       "title": "5x1 en cafés",
+       "description": "Cada 5 cafés te regalamos 1",
+       "expiresAt": "2025-05-10T23:59:59Z"
+     },
+     {
+       "id": "2",
+       "title": "20% off en Latte Plus",
+       "description": "Aplica todo el día en Lattes",
+       "expiresAt": "2025-05-15T23:59:59Z"
+     }
+   ]

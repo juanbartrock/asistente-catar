@@ -1,0 +1,625 @@
+[
+  {
+    "id": "17",
+    "name": "Super tazon + budin",
+    "description": "Super tazón de café con delicioso budín.",
+    "category": "Desayunos",
+    "price": 7700
+  },
+  {
+    "id": "18",
+    "name": "Budin + Flat white",
+    "description": "Delicioso budín acompañado con un flat white.",
+    "category": "Desayunos",
+    "price": 6200
+  },
+  {
+    "id": "19",
+    "name": "Bowls Saludable",
+    "description": "Delicioso bowl con yogurt, granola, frutas de estacion y miel organica.",
+    "category": "Desayunos",
+    "price": 8000
+  },
+  {
+    "id": "20",
+    "name": "Medialuna jamon y queso + Latte",
+    "description": "Deliciosas medialunas de jamón y queso acompañado con un latte.",
+    "category": "Desayunos",
+    "price": 6900
+  },
+  {
+    "id": "21",
+    "name": "Combo Chicos",
+    "description": "Deliciosa chocolatada con un alfajor y un cafecito.",
+    "category": "Desayunos",
+    "price": 5800
+  },
+  {
+    "id": "22",
+    "name": "Petit déjeuner Frances",
+    "description": "Deliciosa croissant acompañada con un café y exprimido de naranja.",
+    "category": "Desayunos",
+    "price": 6700
+  },
+  {
+    "id": "23",
+    "name": "De Campo",
+    "description": "Deliciosas tostadas en pan de campo con queso crema y mermelada acompañadas con un café y exprimido de naranja.",
+    "category": "Desayunos",
+    "price": 7500
+  },
+  {
+    "id": "24",
+    "name": "Desayuno Porteño",
+    "description": "Dos medialunas acompañado con un cafecito.",
+    "category": "Desayunos",
+    "price": 5900
+  },
+  {
+    "id": "25",
+    "name": "Tarta + café + limonada",
+    "description": null,
+    "category": "Desayunos",
+    "price": 9900
+  },
+  {
+    "id": "26",
+    "name": "Tazon",
+    "description": null,
+    "category": "Café",
+    "price": 6700
+  },
+  {
+    "id": "27",
+    "name": "Submarino",
+    "description": null,
+    "category": "Café",
+    "price": 4100
+  },
+  {
+    "id": "28",
+    "name": "Piccolo latte",
+    "description": null,
+    "category": "Café",
+    "price": 3500
+  },
+  {
+    "id": "29",
+    "name": "Café Moka",
+    "description": null,
+    "category": "Café",
+    "price": 5400
+  },
+  {
+    "id": "30",
+    "name": "Macchiato doble",
+    "description": null,
+    "category": "Café",
+    "price": 4200
+  },
+  {
+    "id": "31",
+    "name": "Lungo",
+    "description": null,
+    "category": "Café",
+    "price": 3400
+  },
+  {
+    "id": "32",
+    "name": "Vainilla Latte",
+    "description": null,
+    "category": "Café",
+    "price": 4900
+  },
+  {
+    "id": "33",
+    "name": "Avellana Latte",
+    "description": null,
+    "category": "Café",
+    "price": 4900
+  },
+  {
+    "id": "34",
+    "name": "Latte",
+    "description": null,
+    "category": "Café",
+    "price": 3900
+  },
+  {
+    "id": "35",
+    "name": "Flat White",
+    "description": null,
+    "category": "Café",
+    "price": 4500
+  },
+  {
+    "id": "36",
+    "name": "Espresso doble",
+    "description": null,
+    "category": "Café",
+    "price": 3700
+  },
+  {
+    "id": "37",
+    "name": "Espresso",
+    "description": null,
+    "category": "Café",
+    "price": 3000
+  },
+  {
+    "id": "38",
+    "name": "Cortado",
+    "description": null,
+    "category": "Café",
+    "price": 3500
+  },
+  {
+    "id": "39",
+    "name": "Chocolatada",
+    "description": null,
+    "category": "Café",
+    "price": 3500
+  },
+  {
+    "id": "40",
+    "name": "Caramel Latte",
+    "description": null,
+    "category": "Café",
+    "price": 4900
+  },
+  {
+    "id": "41",
+    "name": "Capuccino Italiano",
+    "description": null,
+    "category": "Café",
+    "price": 4500
+  },
+  {
+    "id": "42",
+    "name": "Capuccino",
+    "description": null,
+    "category": "Café",
+    "price": 3800
+  },
+  {
+    "id": "43",
+    "name": "Americano",
+    "description": null,
+    "category": "Café",
+    "price": 4000
+  },
+  {
+    "id": "44",
+    "name": "Magic",
+    "description": null,
+    "category": "Café",
+    "price": 4300
+  },
+  {
+    "id": "45",
+    "name": "Medialuna DDL",
+    "description": "Medialuna con dulce de leche",
+    "category": "Pastelería",
+    "price": 2700
+  },
+  {
+    "id": "46",
+    "name": "Croissant Queso Azul & Peras",
+    "description": null,
+    "category": "Pastelería",
+    "price": 3960
+  },
+  {
+    "id": "47",
+    "name": "Croissant con mucho DDL",
+    "description": null,
+    "category": "Pastelería",
+    "price": 3500
+  },
+  {
+    "id": "48",
+    "name": "Croissant",
+    "description": null,
+    "category": "Pastelería",
+    "price": 2400
+  },
+  {
+    "id": "49",
+    "name": "Super cookies",
+    "description": "Deliciosas cookies de vainilla, chocolate o red velvet.",
+    "category": "Pastelería",
+    "price": 4200
+  },
+  {
+    "id": "50",
+    "name": "Cinnammon roll de almendra",
+    "description": null,
+    "category": "Pastelería",
+    "price": 4300
+  },
+  {
+    "id": "51",
+    "name": "Cinnammon roll de pistacho",
+    "description": null,
+    "category": "Pastelería",
+    "price": 4300
+  },
+  {
+    "id": "52",
+    "name": "Budín de Naranja",
+    "description": null,
+    "category": "Pastelería",
+    "price": 3500
+  },
+  {
+    "id": "53",
+    "name": "Budín de Banana",
+    "description": null,
+    "category": "Pastelería",
+    "price": 3500
+  },
+  {
+    "id": "54",
+    "name": "Budin Catar Café",
+    "description": null,
+    "category": "Pastelería",
+    "price": 3500
+  },
+  {
+    "id": "55",
+    "name": "Alfajor tambo sur",
+    "description": null,
+    "category": "Pastelería",
+    "price": 3300
+  },
+  {
+    "id": "56",
+    "name": "Medialuna",
+    "description": null,
+    "category": "Pastelería",
+    "price": 1500
+  },
+  {
+    "id": "57",
+    "name": "Carrot cake vegano",
+    "description": null,
+    "category": "Pastelería",
+    "price": 3500
+  },
+  {
+    "id": "58",
+    "name": "Budín de limón vegano",
+    "description": null,
+    "category": "Pastelería",
+    "price": 3500
+  },
+  {
+    "id": "59",
+    "name": "Yogurt con granola y frutas",
+    "description": null,
+    "category": "Pastelería",
+    "price": 4000
+  },
+  {
+    "id": "60",
+    "name": "Croissant Catar",
+    "description": "Rico croissant de rucula o palta.",
+    "category": "Pastelería",
+    "price": 5200
+  },
+  {
+    "id": "61",
+    "name": "Pita Jamón y Queso",
+    "description": "Deliciosa pita de jamón y queso.",
+    "category": "Salados",
+    "price": 5100
+  },
+  {
+    "id": "62",
+    "name": "Tostado Jamón y Queso",
+    "description": "Tostado de jamón y queso en delicioso pan de campo.",
+    "category": "Salados",
+    "price": 4700
+  },
+  {
+    "id": "63",
+    "name": "Tostadas con queso y dulce de estación",
+    "description": "Tostadas con queso y dulce de estación.",
+    "category": "Salados",
+    "price": 4100
+  },
+  {
+    "id": "64",
+    "name": "Tartas",
+    "description": null,
+    "category": "Salados",
+    "price": 7200
+  },
+  {
+    "id": "65",
+    "name": "Super Avocado Toast",
+    "description": "Pan de campo tostado, queso crema, palta, tomate y huevos revueltos.",
+    "category": "Salados",
+    "price": 7200
+  },
+  {
+    "id": "66",
+    "name": "Medialuna de jamon y queso",
+    "description": null,
+    "category": "Salados",
+    "price": 3500
+  },
+  {
+    "id": "67",
+    "name": "Huevos Revueltos",
+    "description": null,
+    "category": "Salados",
+    "price": 5200
+  },
+  {
+    "id": "68",
+    "name": "Focaccia Catar",
+    "description": null,
+    "category": "Salados",
+    "price": 5700
+  },
+  {
+    "id": "69",
+    "name": "Ensalada Teriyaki",
+    "description": null,
+    "category": "Salados",
+    "price": 7200
+  },
+  {
+    "id": "70",
+    "name": "Croissant jamon y queso",
+    "description": null,
+    "category": "Salados",
+    "price": 4300
+  },
+  {
+    "id": "71",
+    "name": "Ensalada Ceasar",
+    "description": null,
+    "category": "Salados",
+    "price": 7200
+  },
+  {
+    "id": "72",
+    "name": "Ensalada ceasar + limonada + cafe",
+    "description": null,
+    "category": "Salados",
+    "price": 9900
+  },
+  {
+    "id": "73",
+    "name": "Medialuna Azul y Peras",
+    "description": null,
+    "category": "Salados",
+    "price": 3190
+  },
+  {
+    "id": "74",
+    "name": "Cinnamon Roll salado",
+    "description": "Delicioso cinnamon roll de champiñón y queso parmesano o jamón y queso.",
+    "category": "Salados",
+    "price": 4300
+  },
+  {
+    "id": "75",
+    "name": "Fosforito catar",
+    "description": null,
+    "category": "Salados",
+    "price": 4000
+  },
+  {
+    "id": "76",
+    "name": "Menú del dia",
+    "description": null,
+    "category": "Salados",
+    "price": 7500
+  },
+  {
+    "id": "77",
+    "name": "Te Rojo",
+    "description": null,
+    "category": "Infusiones",
+    "price": 2800
+  },
+  {
+    "id": "78",
+    "name": "Te verde en hebras",
+    "description": null,
+    "category": "Infusiones",
+    "price": 2800
+  },
+  {
+    "id": "79",
+    "name": "Te Negro en hebras",
+    "description": null,
+    "category": "Infusiones",
+    "price": 2800
+  },
+  {
+    "id": "80",
+    "name": "Matcha Latte",
+    "description": null,
+    "category": "Infusiones",
+    "price": 4500
+  },
+  {
+    "id": "81",
+    "name": "Blend Catar (Hibiscus, pétalos de rosa)",
+    "description": null,
+    "category": "Infusiones",
+    "price": 3400
+  },
+  {
+    "id": "82",
+    "name": "Especial Iced Tea",
+    "description": "Te verde / Te negro / Te Oolong.",
+    "category": "Infusiones",
+    "price": 3500
+  },
+  {
+    "id": "83",
+    "name": "Limonada menta y jengibre",
+    "description": null,
+    "category": "Bebidas",
+    "price": 3400
+  },
+  {
+    "id": "84",
+    "name": "Limonada hibiscus y frutos rojos",
+    "description": null,
+    "category": "Bebidas",
+    "price": 3500
+  },
+  {
+    "id": "85",
+    "name": "Bebidas Coca Cola / Coca Cola Zero / Sprite / Agua con gas / Agua sin gas / Agua saborizada Manzana",
+    "description": null,
+    "category": "Bebidas",
+    "price": 3100
+  },
+  {
+    "id": "86",
+    "name": "Exprimido Naranja",
+    "description": null,
+    "category": "Bebidas",
+    "price": 4500
+  },
+  {
+    "id": "87",
+    "name": "Agua Caliente",
+    "description": null,
+    "category": "Bebidas",
+    "price": 700
+  },
+  {
+    "id": "88",
+    "name": "Vermut rosso",
+    "description": null,
+    "category": "Bebidas",
+    "price": 8000
+  },
+  {
+    "id": "89",
+    "name": "Vermut para dos",
+    "description": "Vermut para compartir + tabla de fiambre.",
+    "category": "Bebidas",
+    "price": 25000
+  },
+  {
+    "id": "90",
+    "name": "Cervezas Pampa",
+    "description": null,
+    "category": "Bebidas",
+    "price": 4500
+  },
+  {
+    "id": "91",
+    "name": "Licuado de Banana",
+    "description": "Licuado de Banana con leche o sin leche.",
+    "category": "Licuados",
+    "price": 3700
+  },
+  {
+    "id": "92",
+    "name": "Iced tea",
+    "description": "Te negro, te verde y te rojo.",
+    "category": "Frios",
+    "price": 3200
+  },
+  {
+    "id": "93",
+    "name": "Iced latte",
+    "description": null,
+    "category": "Frios",
+    "price": 4900
+  },
+  {
+    "id": "94",
+    "name": "Iced Flat White",
+    "description": null,
+    "category": "Frios",
+    "price": 5500
+  },
+  {
+    "id": "95",
+    "name": "Iced americano",
+    "description": null,
+    "category": "Frios",
+    "price": 4500
+  },
+  {
+    "id": "96",
+    "name": "Frapuccino",
+    "description": null,
+    "category": "Frios",
+    "price": 5300
+  },
+  {
+    "id": "97",
+    "name": "Espresso Tonic",
+    "description": null,
+    "category": "Frios",
+    "price": 5500
+  },
+  {
+    "id": "98",
+    "name": "Espresso Orange",
+    "description": null,
+    "category": "Frios",
+    "price": 5300
+  },
+  {
+    "id": "99",
+    "name": "Affogato",
+    "description": null,
+    "category": "Frios",
+    "price": 4500
+  },
+  {
+    "id": "100",
+    "name": "Cold Brew",
+    "description": "Cafe filtrado, macerado 24 horas en frio.",
+    "category": "Frios",
+    "price": 4300
+  },
+  {
+    "id": "101",
+    "name": "Cafe En Granos Peru",
+    "description": null,
+    "category": "Cafe en granos",
+    "price": 21000
+  },
+  {
+    "id": "102",
+    "name": "Café En Granos Colombia",
+    "description": null,
+    "category": "Cafe en granos",
+    "price": 22000
+  },
+  {
+    "id": "103",
+    "name": "Vaso",
+    "description": null,
+    "category": "Merch",
+    "price": 5500
+  },
+  {
+    "id": "104",
+    "name": "Filtrado 500ml",
+    "description": null,
+    "category": "Filtrados",
+    "price": 7500
+  },
+  {
+    "id": "105",
+    "name": "Filtrado 250ml",
+    "description": null,
+    "category": "Filtrados",
+    "price": 5500
+  }
+]
