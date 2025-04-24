@@ -1,5 +1,6 @@
 import { openai } from '../utils/openai';
-import { searchMenu, searchPromotions, searchFaqs } from './weaviateClient';
+import { searchMenu, searchPromotions, searchFaqs } from './tools/rag';
+import { getMenuHits, getPromoHits, getFaqHits } from './tools/openai';
 import { getHistory, appendHistory } from './sessionStore';
 
 /**
@@ -53,19 +54,56 @@ export async function chatAgent(sessionId: string, message: string): Promise<str
     .join('\n');
   const userPrompt = `Contexto MENÚ:\n${menuContext}\n\nContexto PROMOCIONES:\n${promoContext}\n\nContexto PREGUNTAS FRECUENTES:\n${faqContext}\n\nHistorial:\n${history}\n\nUsuario: ${message}`;
 
-  // Llamada a OpenAI
-  const resp = await openai.chat.completions.create({
+  // Primera llamada a OpenAI con Function Calling para RAG
+  const initialResp = await openai.chat.completions.create({
     model: 'gpt-4.1-nano-2025-04-14',
     messages: [
       { role: 'system', content: systemPrompt },
       { role: 'user', content: userPrompt }
     ],
+    functions: [getMenuHits, getPromoHits, getFaqHits],
+    function_call: 'auto',
     temperature: 0.7,
   });
 
-  // Asegurarnos de que existe contenido antes de trim
-  const content = resp.choices?.[0]?.message?.content;
-  const answer = content ? content.trim() : 'Lo siento, no pude procesar tu solicitud.';
+  const initialMessage = initialResp.choices?.[0]?.message;
+  console.log('[RAG Function] initialMessage:', initialMessage);
+  // Si el modelo decide llamar a una función RAG
+  if (initialMessage?.function_call) {
+    const { name, arguments: argsJson } = initialMessage.function_call;
+    const args = JSON.parse(argsJson);
+    console.log(`[RAG Function] Calling function: ${name} with args:`, args);
+    let funcResult: any[] = [];
+    if (name === 'getMenuHits') {
+      funcResult = await searchMenu(args.text, args.limit);
+    } else if (name === 'getPromoHits') {
+      funcResult = await searchPromotions(args.text, args.limit);
+    } else if (name === 'getFaqHits') {
+      funcResult = await searchFaqs(args.text, args.limit);
+    }
+    console.log(`[RAG Function] Result from ${initialMessage.function_call.name}:`, funcResult);
+    // Segunda llamada reenviando el resultado de la función
+    const followUpResp = await openai.chat.completions.create({
+      model: 'gpt-4.1-nano-2025-04-14',
+      messages: [
+        { role: 'system', content: systemPrompt },
+        { role: 'user', content: userPrompt },
+        initialMessage,
+        { role: 'function', name, content: JSON.stringify(funcResult) }
+      ],
+      temperature: 0.7,
+    });
+    console.log('[RAG FollowUp] response message:', followUpResp.choices?.[0]?.message);
+    const finalContent = followUpResp.choices?.[0]?.message?.content?.trim();
+    const finalAnswer = finalContent || 'Lo siento, no pude procesar tu solicitud.';
+    appendHistory(sessionId, 'assistant', finalAnswer);
+    return finalAnswer;
+  }
+  // No se invocó función; respuesta directa
+  console.log('[RAG] No function_call detected; direct response content:', initialMessage?.content);
+  // Si no se invoca función, devuelve la respuesta directamente
+  const textContent = initialMessage?.content?.trim();
+  const answer = textContent || 'Lo siento, no pude procesar tu solicitud.';
   appendHistory(sessionId, 'assistant', answer);
   return answer;
 } 
